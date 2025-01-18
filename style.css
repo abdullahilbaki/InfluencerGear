@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 3%;
+    font-family: "Poppins", serif;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav h3 {
+    grid-column: 1;
+    color: rgb(58, 58, 58);
+    font-size: 34px;
+    font-weight: 700;
+}
+
+nav ul {
+    grid-column: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(224, 44, 109);
+    transform: scale(1.1);
+}
+
+nav .icons {
+    grid-column: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav .icons a img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    nav {
+        grid-template-columns: 1fr auto;
+    }
+
+    nav h3 {
+        font-size: 22px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+}
