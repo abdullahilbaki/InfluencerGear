@@ -121,6 +121,32 @@ nav .icons a img {
     height: 100%;
 }
 
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.logos img {
+    max-width: 100px;
+    height: auto;
+}
+
+.logo-container {
+    margin: 70px auto;
+}
+
+.logo-container hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.378%, rgba(192, 204, 218, 0.1) 100%);
+
+}
+
 
 @media screen and (max-width: 576px) {
     nav {
@@ -156,6 +182,18 @@ nav .icons a img {
     .banner-img {
         width: 80%;
         height: 80%;
+    }
+
+    .logos {
+        gap: 20px;
+    }
+
+    .logos img {
+        max-width: 80px;
+    }
+
+    .logo-container {
+        margin: 40px auto;
     }
 
 }
