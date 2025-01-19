@@ -102,6 +102,7 @@ nav .icons a img {
     border: none;
     padding: 10px 24px;
     color: rgb(255, 255, 255);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 700;
     display: flex;
@@ -250,6 +251,7 @@ main>h3 {
 
 .see-more {
     color: rgba(224, 44, 109, 0.87);
+    font-family: Poppins;
     font-size: 16px;
     font-weight: 700;
     background: none;
@@ -262,7 +264,8 @@ main>h3 {
 }
 
 .see-more:hover {
-    transform: translateX(5px); /* Slide arrow to the right */
+    transform: translateX(5px);
+    /* Slide arrow to the right */
 }
 
 .see-more i {
@@ -270,6 +273,60 @@ main>h3 {
 
 }
 
+.featured-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.featured-products img {
+    width: 100%;
+    height: 100%;
+}
+
+.featured-products-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.featured-products-text h1 {
+    color: rgb(10, 8, 38);
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.featured-products-text p {
+    color: rgb(108, 108, 108);
+    font-size: 16px;
+    font-weight: 700;
+    width: 80%;
+}
+
+.featured-products button {
+    background: rgb(224, 44, 109);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.featured-products button:hover {
+    background: rgb(194, 39, 96);
+    color: rgb(240, 240, 240);
+    transform: scale(1.05);
+}
+
+.featured-products button i {
+    margin-left: 8px;
+}
 
 @media screen and (max-width: 576px) {
     nav {
@@ -323,4 +380,24 @@ main>h3 {
         max-width: 70%;
     }
 
+    .featured-products {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .featured-products-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .featured-products h1 {
+        font-size: 24px;
+        font-weight: 700;
+
+    }
+
+    .featured-products-text p {
+        width: 96%;
+    }
 }
