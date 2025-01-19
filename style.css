@@ -319,4 +319,8 @@ main>h3 {
         margin: 40px auto;
     }
 
+    .box p {
+        max-width: 70%;
+    }
+
 }
